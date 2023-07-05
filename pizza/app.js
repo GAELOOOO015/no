@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var extras = 0;
     
     if (refrescoCheckbox.checked) {
-      extras += 20;
+      extras += 40;
     }
     if (papasCheckbox.checked) {
-      extras += 30;
+      extras += 50;
     }
     if (alitasCheckbox.checked) {
-      extras += 40;
+      extras += 75;
     }
     
     return extras;
