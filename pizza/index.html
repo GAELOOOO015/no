@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Pizzería</title>
+  <style>
+    .slider {
+      width: 200px;
+    }
+  </style>
+  <center> 
+    <h1 class="bg-danger text-white">Pizzería</h1>
+  
+    <h2 class="bg-dark text-white">Tamaño de la pizza:</h2>
+    <select id="size" class="form-control">
+      <option value="individual">Individual ($100)</option>
+      <option value="grande">Grande ($120)</option>
+      <option value="familiar">Familiar ($150)</option>
+      <option value="jumbo">Jumbo ($180)</option>
+    </select>
+    
+    <h2 class="bg-primary text-white">Cantidad de pizzas:</h2>
+    <input type="range" id="quantity" min="1" max="10" step="1" value="1" class="slider">
+    <span id="quantityDisplay">1</span>
+    
+    <h2 class="bg-primary text-white">Ingredientes extras:</h2>
+    <label>
+      <input type="checkbox" id="refresco" value="refresco" class="form-check-input p-2 " > Refresco
+    </label>
+    <label>
+      <input type="checkbox" id="papas" value="papas" class="form-check-input p-2 "> Papas
+    </label>
+    <label>
+      <input type="checkbox" id="alitas" value="alitas" class="form-check-input p-2 "> Alitas
+    </label>
+    
+    <h2>Total:</h2>
+    <div id="total">$0</div>
+    </center>
+  
+</head>
+<body>
+ 
+  <script src="app.js"></script>
+</body>
+</html>
